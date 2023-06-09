@@ -157,9 +157,9 @@ Thêm config Style URL, URL server và API_KEY.
 ```
 <key>VietMapURL</key>
 <string>YOUR_STYLE_HERE</string>
-<key>MGLMapboxAPIBaseURL</key>
+<key>VietMapAPIBaseURL</key>
 <string>YOUR_SERVER_URL</string>
-<key>MGLMapboxAccessToken</key>
+<key>VietMapAccessToken</key>
 <string>YOUR_API_KEY</string>
 ```
 
