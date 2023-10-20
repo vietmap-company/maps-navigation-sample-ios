@@ -30,6 +30,11 @@ Cài đặt Carthage
 $ brew install carthage
 ```
 
+Cài đặt pod
+```
+$ brew install cocoapods
+```
+
 ### 2. Tạo project Navigation với xcode.
 
 * Tạo project với Swift và Storyboard
@@ -63,7 +68,11 @@ $ chmod +x Cartfile
 Mở file Cartfile thêm 2 dòng sau và lưu lại:
 
 ```
-github "vietmap-company/maps-sdk-navigation-ios" ~> 1.0.0
+github "mapbox/turf-swift" ~> 0.2
+github "ceeK/Solar" ~> 2.1.0
+github "vietmap-company/maps-sdk-speech-ios" ~> 1.0.0
+github "vietmap-company/maps-sdk-geocoder-ios" ~> 1.0.0
+github "vietmap-company/maps-sdk-directions-ios" ~> 1.0.0
 ```
 
 Sau đó chạy lệnh sau:
@@ -90,20 +99,26 @@ Kéo thả tất cả thư mục xcframework trong thư mục Carthage/Build v�
 
 ![](./img/img_9.png)
 
-Chọn Package Dependencies và thêm các thư viện sau:<br>
+* Tạo Podfile bằng cách mở terminal và chạy lệnh sau:
+
 ```
-https://github.com/vietmap-company/maps-sdk-ios.git
+$ cd ~/path/to/NavigationSample
+$ pod init
 ```
 
-![](./img/img_5.png)
+Mở Podfile và thêm các thư viện sau:
 
-Đảm bảo chọn Dependency Rule > Branch > main để sử dụng thư viện mới nhất.
+```
+pod 'VietMap', '1.0.14'
+pod 'VietMapNavigation', '1.0.0'
+pod 'VietMapCoreNavigation', '1.0.0'
+```
 
-![](./img/img_6.png)
+Sau đó chạy lệnh:
 
-Sau khi hoàn thành sẽ được kết quả.
-
-![](./img/img_7.png)
+```
+pod install
+```
 
 ### 4. Các sự kiện.
 
@@ -371,8 +386,8 @@ SampleCode
 
 ```swift
 import UIKit
-import MapboxCoreNavigation
-import MapboxNavigation
+import VietMapCoreNavigation
+import VietMapNavigation
 import MapboxDirections
 import UserNotifications
 
