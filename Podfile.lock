@@ -1,24 +1,16 @@
 PODS:
   - VietMap (1.0.14)
-  - VietMapCoreNavigation (1.0.0)
-  - VietMapNavigation (1.0.0)
 
 DEPENDENCIES:
   - VietMap (= 1.0.14)
-  - VietMapCoreNavigation (= 1.0.0)
-  - VietMapNavigation (= 1.0.0)
 
 SPEC REPOS:
   trunk:
     - VietMap
-    - VietMapCoreNavigation
-    - VietMapNavigation
 
 SPEC CHECKSUMS:
   VietMap: ab9386c1e41ba42376d635217bbb0060716441e2
-  VietMapCoreNavigation: 053b02a2965e4090b9e7d5a73868037cc216c496
-  VietMapNavigation: 1740f361d2fce6c61541a6638835269cf5f340e5
 
-PODFILE CHECKSUM: d5915d55ab5bab37fd14192ebe8d575ff6df2c88
+PODFILE CHECKSUM: 1c9a1773c9d75e6a323de67d5155552cb895d6f2
 
-COCOAPODS: 1.12.1
+COCOAPODS: 1.13.0

@@ -68,11 +68,7 @@ $ chmod +x Cartfile
 Mở file Cartfile thêm 2 dòng sau và lưu lại:
 
 ```
-github "mapbox/turf-swift" ~> 0.2
-github "ceeK/Solar" ~> 2.1.0
-github "vietmap-company/maps-sdk-speech-ios" ~> 1.0.0
-github "vietmap-company/maps-sdk-geocoder-ios" ~> 1.0.0
-github "vietmap-company/maps-sdk-directions-ios" ~> 1.0.0
+github "vietmap-company/maps-sdk-navigation-ios" "2.1.0"
 ```
 
 Sau đó chạy lệnh sau:
@@ -110,8 +106,6 @@ Mở Podfile và thêm các thư viện sau:
 
 ```
 pod 'VietMap', '1.0.14'
-pod 'VietMapNavigation', '1.0.0'
-pod 'VietMapCoreNavigation', '1.0.0'
 ```
 
 Sau đó chạy lệnh:
@@ -388,7 +382,7 @@ SampleCode
 import UIKit
 import VietMapCoreNavigation
 import VietMapNavigation
-import MapboxDirections
+import VietMapDirections
 import UserNotifications
 
 private typealias RouteRequestSuccess = (([Route]) -> Void)

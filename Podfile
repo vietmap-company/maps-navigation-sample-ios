@@ -7,6 +7,4 @@ target 'NavigationSampleV2' do
 
   # Pods for NavigationSampleV2
   pod 'VietMap', '1.0.14'
-  pod 'VietMapNavigation', '1.0.0'
-  pod 'VietMapCoreNavigation', '1.0.0'
 end

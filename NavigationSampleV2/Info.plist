@@ -21,31 +21,31 @@
 			</array>
 		</dict>
 	</dict>
-    <key>VietMapURL</key>
-    <string>YOUR_STYLE_HERE</string>
-    <key>CFBundleDevelopmentRegion</key>
-    <string>vi</string>
-    <key>CFBundleAllowMixedLocalizations</key>
-    <true/>
-    <key>VietMapAPIBaseURL</key>
-    <string>YOUR_SERVER_URL</string>
-    <key>VietMapAccessToken</key>
-    <string>YOUR_API_KEY</string>
-    <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-    <string>Get user location</string>
-    <key>NSLocationAlwaysUsageDescription</key>
-    <string>Get user location</string>
-    <key>NSLocationWhenInUseUsageDescription</key>
-    <string>Get user location</string>
-    <key>UIBackgroundModes</key>
-    <array>
-        <string>audio</string>
-        <string>location</string>
-    </array>
-    <key>NSLocationTemporaryUsageDescriptionDictionary</key>
-    <dict>
-        <key>LocationAccuracyAuthorizationDescription</key>
-        <string>Please enable precise location. Turn-by-turn directions only work when precise location data is available.</string>
-    </dict>
+	<key>VietMapURL</key>
+	<string>https://maps.vietmap.vn/api/maps/light/styles.json?apikey=0cd03613175a67f87567f86f0ba2f3b818e3a2b5f2c2634b</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>vi</string>
+	<key>CFBundleAllowMixedLocalizations</key>
+	<true/>
+	<key>VietMapAPIBaseURL</key>
+	<string>https://maps.vietmap.vn/api/navigations/route/</string>
+	<key>VietMapAccessToken</key>
+	<string>89cb1c3c260c27ea71a115ece3c8d7cec462e7a4c14f0944</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Get user location</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Get user location</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Get user location</string>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>audio</string>
+		<string>location</string>
+	</array>
+	<key>NSLocationTemporaryUsageDescriptionDictionary</key>
+	<dict>
+		<key>LocationAccuracyAuthorizationDescription</key>
+		<string>Please enable precise location. Turn-by-turn directions only work when precise location data is available.</string>
+	</dict>
 </dict>
 </plist>

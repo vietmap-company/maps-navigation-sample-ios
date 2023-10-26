@@ -1,7 +1,7 @@
 import UIKit
 import VietMapCoreNavigation
 import VietMapNavigation
-import MapboxDirections
+import VietMapDirections
 import UserNotifications
 
 private typealias RouteRequestSuccess = (([Route]) -> Void)
@@ -55,6 +55,7 @@ class ViewController: UIViewController, MGLMapViewDelegate {
     // MARK: Directions Request Handlers
 
     fileprivate lazy var defaultSuccess: RouteRequestSuccess = { [weak self] (routes) in
+        print("success")
         guard let current = routes.first else { return }
         self?.clearMarker.isEnabled = true
         self?.mapView?.removeWaypoints()
@@ -124,7 +125,6 @@ class ViewController: UIViewController, MGLMapViewDelegate {
         // Note: The destination name can be modified. The value is used in the top banner when arriving at a destination.
         let waypoint = Waypoint(coordinate: coordinates, name: "Dropped Pin #\(waypoints.endIndex + 1)")
         waypoints.append(waypoint)
-
         requestRoute()
     }
 
