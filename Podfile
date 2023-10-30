@@ -6,5 +6,6 @@ target 'NavigationSampleV2' do
   use_frameworks!
 
   # Pods for NavigationSampleV2
-  pod 'VietMap', '1.0.14'
+  pod 'VietMapNavigation', '2.1.5'
+  pod 'VietMapCoreNavigation', '2.1.5'
 end

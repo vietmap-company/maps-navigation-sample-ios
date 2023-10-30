@@ -25,11 +25,6 @@ Nếu Homebrew chưa được cài đặt, sử dụng lệnh sau:
 $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-Cài đặt Carthage
-```
-$ brew install carthage
-```
-
 Cài đặt pod
 ```
 $ brew install cocoapods
@@ -47,54 +42,6 @@ Mở xcode, chọn File > New > Project
 ![](./img/img_2.png)
 
 ### 3. Import thư viện.
-
-* Tạo Cartfile bằng cách mở terminal và chạy lệnh sau:
-
-```
-$ cd ~/path/to/NavigationSample
-$ touch Cartfile
-```
-
-File Cartfile sẽ được tạo tại thư mục path/to/NavigationSample
-
-![](./img/img_3.png)
-
-Để đảm bảo Cartfile có đầy đủ quyền để xây dựng thư viện, sử dụng lệnh sau:
-
-```
-$ chmod +x Cartfile
-```
-
-Mở file Cartfile thêm 2 dòng sau và lưu lại:
-
-```
-github "vietmap-company/maps-sdk-navigation-ios" "2.1.0"
-```
-
-Sau đó chạy lệnh sau:
-
-```
-$ carthage bootstrap --platform iOS --use-xcframeworks
-```
-
-**Lưu ý: Nếu build carthage bị lỗi "file libarclite_iphoneos.a not found". Vui lòng tham khảo cách fix tại đây**
-
-https://stackoverflow.com/questions/75574268/missing-file-libarclite-iphoneos-a-xcode-14-3
-
-File mới sẽ được tạo:
-- Cartfile.resolve: Được chỉ định framework nào sẽ được fetched/built
-- Thư mục Carthage: chứa tất cả các framework được build
-
-Tạo thư mục Frameworks trong NavigationSample<br>
-Chọn NavigationSample > Chuột phải > New group<br>
-Kéo thả tất cả thư mục xcframework trong thư mục Carthage/Build vừa tạo ở trên vào thư mục Frameworks trong xcode như hình dưới:
-
-![](./img/img_4.png)
-
-**Lưu ý: Đảm bảo chuyển đổi Embed thành [Embed & sign]**
-
-![](./img/img_9.png)
-
 * Tạo Podfile bằng cách mở terminal và chạy lệnh sau:
 
 ```
@@ -105,7 +52,8 @@ $ pod init
 Mở Podfile và thêm các thư viện sau:
 
 ```
-pod 'VietMap', '1.0.14'
+pod 'VietMapNavigation', '2.1.5'
+pod 'VietMapCoreNavigation', '2.1.5'
 ```
 
 Sau đó chạy lệnh:

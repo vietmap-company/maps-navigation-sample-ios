@@ -1,16 +1,45 @@
 PODS:
-  - VietMap (1.0.14)
+  - VietMap (1.0.15)
+  - VietMapCoreNavigation (2.1.5):
+    - VietMapDirections.swift (~> 2.0.1)
+    - VietMapTurf (~> 1.0.2)
+  - VietMapDirections.swift (2.0.1):
+    - VietMapPolyline (~> 1.0.4)
+  - VietMapNavigation (2.1.5):
+    - VietMap (~> 1.0.14)
+    - VietMapCoreNavigation (= 2.1.5)
+    - VietMapSolar (~> 1.0.3)
+    - VietMapSpeech (~> 2.0.1)
+  - VietMapPolyline (1.0.6)
+  - VietMapSolar (1.0.3)
+  - VietMapSpeech (2.0.1)
+  - VietMapTurf (1.0.2)
 
 DEPENDENCIES:
-  - VietMap (= 1.0.14)
+  - VietMapCoreNavigation (= 2.1.5)
+  - VietMapNavigation (= 2.1.5)
 
 SPEC REPOS:
   trunk:
     - VietMap
+    - VietMapCoreNavigation
+    - VietMapDirections.swift
+    - VietMapNavigation
+    - VietMapPolyline
+    - VietMapSolar
+    - VietMapSpeech
+    - VietMapTurf
 
 SPEC CHECKSUMS:
-  VietMap: ab9386c1e41ba42376d635217bbb0060716441e2
+  VietMap: b814f0db06fd67633417b29335e0f70af50bb65f
+  VietMapCoreNavigation: 8ecf7d083f486aba5fa012a4d00f33966c7a82e1
+  VietMapDirections.swift: d622c98e381281b39f7dcac2b0445ee2f6e1690e
+  VietMapNavigation: 165b55e64390d736d6a605e8af67b7016859f5c0
+  VietMapPolyline: e599c6d0a0a4b3672957881e2f666ba2141a4e83
+  VietMapSolar: ef412e72efb00b700f2223e701cae66b446bf17b
+  VietMapSpeech: fe5bd0c2ed2757aa7ac59337d74480e25e5a36ed
+  VietMapTurf: 323ba165ae0aeb0fb6622d427e5341c14f4afada
 
-PODFILE CHECKSUM: 1c9a1773c9d75e6a323de67d5155552cb895d6f2
+PODFILE CHECKSUM: 48738272a8922b13240c827913e5ad45d3a0e245
 
 COCOAPODS: 1.13.0
